@@ -1,0 +1,134 @@
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Kaiti;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px; 
+  background: #f1f1f1;
+  font-size: 20px;
+}
+ 
+/* 头部标题 */
+.header{
+  margin-left: 200px;
+}
+.header img{
+   width:165px;
+   margin-right: 20px;
+}
+.header h1 {
+  font-family: stxingkai;
+  font-size: 50px;
+  color: red; 
+}
+.header p {
+  font-family: stxinwei;
+  font-size: 36px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  font-family: stcaiyun;
+}
+ .topnav ul {
+  margin: 0px;
+  text-align: right;
+  list-style: none;
+}
+
+.topnav ul li {
+  margin: 0px;
+  display: inline;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.current{
+  background-color: red;
+}
+ 
+/* 创建两列 */
+.row h2{
+  font-family: stkaiti;
+  font-weight: bold;
+  font-size: 36px;
+}
+/* Left column */
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.leftcolumn h2{
+  text-align: center;
+}
+.leftcolumn p{
+  line-height: 2em; 
+  text-indent: 2em;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* 图像部分 */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
