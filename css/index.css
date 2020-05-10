@@ -1,0 +1,195 @@
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Kaiti;
+  padding-top: 20px;
+  padding-left: 200px;
+  padding-right: 200px; 
+  font-size: 24px;
+  background-image: url(../imges/timg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+b {
+  color:red;
+}
+
+/* 头部标题 */
+.header{
+  margin-left: 200px;
+}
+.header img{
+   width:165px;
+   margin-right: 20px;
+}
+.header h1 {
+  font-family: stxingkai;
+  font-size: 50px;
+  color: red; 
+}
+.header p {
+  font-family: stxinwei;
+  font-size: 36px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  font-family: stxinwei;
+  font-size: 24px;
+  background-image: url(../imges/nav.png);
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+ .topnav ul {
+  margin: 0px;
+  text-align: right;
+  list-style: none;
+}
+
+.topnav ul li {
+  margin: 0px;
+  display: inline;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: lime;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+.current{
+  font-style: italic;
+  font-weight: bold;
+  font-family: Microsoft YaHei;
+  font-size: 20px;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: navy;
+  color: red;
+}
+/*页面链接 */
+.toptwo{  
+width: 9%;
+  position: fixed;
+  font-family: stxinwei;
+  font-size: 26px;
+  left: 1%;
+top: 34%;
+}
+.toptwo a {
+  overflow: hidden;
+  height: 40px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 14px;
+    padding-bottom: 14px;
+  margin-bottom: 40px;  
+  text-decoration: none;
+  border-radius: 10px;
+}
+.toptwo a:hover {
+  overflow: visible;
+  height: auto;
+  background-color: black;
+  color: snow;
+}
+/* 创建两列 */
+.row h2{
+  font-family: stkaiti;
+  font-weight: bold;
+  font-size: 36px;
+}
+/* Left column */
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.leftcolumn h2{
+  text-align: center;
+  color: #8b4513;  
+}
+.leftcolumn p{
+  line-height: 2em; 
+  text-indent: 2em;
+}
+.leftcolumn .card{
+  background-color: rgba(255,255,255,0.55);
+  border-radius: 25px;
+}
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.rightcolumn .card{
+  background-image: url(../imges/rightcard.png);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.rightcolumn .card h2{
+  text-indent: 1em;
+color: red;
+}
+.rightcolumn .card p{
+  text-indent: 2em;
+  color: purple;
+}
+
+/* 图像部分 */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+/* 文章卡片效果 */
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+.card a{
+  text-decoration: none;
+}
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  margin-top: 20px;
+    color: snow;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  body{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .header{
+  margin-left: 10px;
+}
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,160 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Kaiti;
+  font-size: 22px;
+  background-image: url(../imges/timg2.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+margin-left: 20%;
+margin-right: 20%;
+border-radius: 25px;
+
+}
+/* 二级菜单栏 */
+#TabMenuCon{
+    overflow: hidden;  
+    margin-left: 20%;
+margin-right: 20%;
+position: absolute;
+}
+        .TabMenuCon{
+            clear: both;
+            display: none;
+        }
+
+        .TabMenuCon li{
+            display: inline-block;
+        }
+        .TabMenuCon li a{
+          text-decoration: none;
+          color: #0f99a9;
+          font-size: 26px; 
+          margin-right: 30px;
+        }
+        .TabMenuCon li a:hover{
+            background-color: #8b0000;
+  color: #f2f2f2;
+    border-radius: 5px;
+        }
+        .nav1{
+  background-color: #8b0000;
+  color: #f2f2f2;
+    border-radius: 5px;
+}
+/* 导航链接 */
+.topnav a {
+  float: left;
+  display: block;
+   color: #0f99a9;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 25%;
+  text-align: center;
+  font-size: 26px;
+}
+.nav{
+	background-color: #333;
+  color: #f2f2f2;
+    border-radius: 25px;
+}
+
+/* 链接 - 修改颜色 */
+.topnav a:hover {
+  background-color: #333;
+  color: #f2f2f2;
+  border-radius: 25px;
+}
+/* 创建三个不相等的列 */
+.row{
+  margin-top: 80px;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* 左右两侧 */
+.column.side {
+  width: 20%;
+}
+
+/* 中间区域 */
+.column.middle {
+  width: 60%;   
+  height:800px;
+  background-image: url(../imges/timg1.png);
+  background-repeat: no-repeat;
+   background-size: contain;
+
+}
+.column.middle .title {
+	float: left;
+	width: 10%;
+	height: 55%;
+	margin-left: 8.5%;
+	margin-top: 20%;
+  writing-mode: tb-rl;
+}
+.title h2{
+  color: red;
+}
+.column.middle .main {
+	width:68%;
+	height: 65%;
+	margin-left:25% ;
+	margin-top: 10%;
+  overflow: auto;
+}
+.main h1{
+  color: #8b0000;
+  text-align: center;
+}
+.main h2{
+    color: #8b0000;
+  text-align: center;
+}
+.main h3{
+  color: #8b0000;
+  margin-left: 65%;
+}
+.main p{
+  text-indent: 2em;
+  line-height: 1.5em;
+}
+.o {
+  text-align: center;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 水平线 */
+.hr1{
+  width: 70%;
+  border:none;
+  border-top:5px groove;
+}
+.hr2{
+  width: 90%;
+  border:1px dashed;
+}
